@@ -1,8 +1,11 @@
+import { PiShoppingCartLight } from "react-icons/pi";
+import Badge from 'react-bootstrap/Badge';
+
 const CartWidget = () => {
     return (
         <div className="cart-widget">
-            <span>🛒</span>
-            <span style={{ color: 'red', fontWeight: 'bold' }}>5</span>
+            <PiShoppingCartLight color="rgb(43, 191, 220)" fontSize={'2rem'}/>
+            <Badge bg="danger">4</Badge>
         </div>
     );
 };
