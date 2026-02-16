@@ -8,8 +8,7 @@ import { NavLink } from 'react-router-dom';
 
 function NavBarBS() {
 
-    // Podrías obtener las categorías de tu archivo de productos o definirlas aquí
-    const categories = ['Nuevos', 'Ofertas', 'Mas Vendidos']; // Ajustá según tus datos reales
+    const categories = ['Nuevos', 'Ofertas', 'Mas Vendidos'];
 
     return (
         <Navbar expand="lg" className="bg-body-tertiary" style={{ padding: '1rem 0' }}>

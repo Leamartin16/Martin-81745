@@ -6,7 +6,6 @@ function ItemDetail({ name, price, stock, description, img }) {
     const [randomDetail, setRandomDetail] = useState('');
 
     useEffect(() => {
-        // Lista de posibles detalles aleatorios
         const details = [
             'Edición limitada',
             'Incluye estuche de regalo',
@@ -21,12 +20,10 @@ function ItemDetail({ name, price, stock, description, img }) {
         ];
         const randomIndex = Math.floor(Math.random() * details.length);
         setRandomDetail(details[randomIndex]);
-    }, []); // Se ejecuta solo al montar el componente
+    }, []);
 
-    // Función que se ejecutará cuando el usuario confirme la cantidad (por ahora solo un alert)
     const handleAddToCart = (quantity) => {
         alert(`Agregaste ${quantity} unidad(es) de ${name} al carrito`);
-        // Más adelante aquí irá la lógica del contexto del carrito
     };
 
     return (

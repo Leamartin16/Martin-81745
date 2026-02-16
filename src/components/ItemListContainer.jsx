@@ -14,7 +14,6 @@ function ItemListContainer() {
         getProductos()
             .then((data) => {
                 if (categoryId) {
-                    // Filtramos por categoría (comparación insensible a mayúsculas/minúsculas)
                     const filtered = data.filter(
                         (prod) => prod.category.toLowerCase().replace(/\s+/g, '') === categoryId.toLowerCase()
                     );

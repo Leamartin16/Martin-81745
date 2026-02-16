@@ -1,7 +1,7 @@
 import {useState} from "react"
 
 const ItemCount = (props) => {
-        // const [variableDeEstado, FuncionModificadora ]=useState(valor por defecto);
+        
 
         const [count, setCount]= useState(1)
         const [comprar, setComprar]= useState(false)
