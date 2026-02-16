@@ -1,23 +1,25 @@
 import { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import NavBar from './components/NavBar'
-import './App.css'
 import ItemCount from './components/ItemCount'
-import ItemListCountainer from './components/ItemListCountainer'
-import NavBarBS from './components/NavBarbs';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import NavBarBS from './components/NavBarBS'
+import ItemDetailContainer from './components/ItemDetailContainer'
+import ItemListContainer from './components/ItemListContainer'
+import './App.css'
 
 function App() {
 
 
   return (
-    <>
-
+    <BrowserRouter>
       <NavBarBS />
-      <ItemListCountainer mensaje='Bienvenido a mi App! ' />
-      {/* <ItemCount /> */}
-
-    </>
-  )
+      <Routes>
+        <Route path="/" element={<ItemListContainer />} />
+        <Route path="/category/:categoryId" element={<ItemListContainer />} />
+        <Route path="/item/:id" element={<ItemDetailContainer />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App

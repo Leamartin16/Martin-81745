@@ -1,20 +1,17 @@
 import React from 'react'
-import {Button, Card } from 'react-bootstrap'
+import { Button, Card } from 'react-bootstrap'
 
-const Item = ({ prod }) => {
-    console.log(prod)
+function Item({ name, price, img, description }) {
     return (
-        <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src={prod.img} />
-            <Card.Body>
-                <Card.Title>{prod.name}</Card.Title>
-                <Card.Text>
-                    ${prod.price},00
-                </Card.Text>
-                <Button variant="dark">Ver Mas</Button>
-            </Card.Body>
-        </Card>
-    )
+        <div className="card h-100 shadow-sm">
+            <img src={img} className="card-img-top" alt={name} style={{ height: '200px', objectFit: 'cover' }} />
+            <div className="card-body">
+                <h5 className="card-title">{name}</h5>
+                <p className="card-text text-muted">{description}</p>
+                <p className="card-text fw-bold">${price}</p>
+            </div>
+        </div>
+    );
 }
 
-export default Item
+export default Item;

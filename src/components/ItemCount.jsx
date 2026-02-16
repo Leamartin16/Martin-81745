@@ -1,9 +1,10 @@
 import {useState} from "react"
 
-const ItemCount = () => {
+const ItemCount = (props) => {
         // const [variableDeEstado, FuncionModificadora ]=useState(valor por defecto);
 
         const [count, setCount]= useState(1)
+        const [comprar, setComprar]= useState(false)
 
     const sumar = () => {
     if (count < props.stock){
@@ -18,9 +19,9 @@ const ItemCount = () => {
 }
     return (
         <div>
-            <button onClick={restar}>-</button>
-            <span>{count}</span>
-            <button onClick={sumar}>+</button>
+            <button className="btn btn-danger" onClick={restar}>-</button>
+            <span className="btn">{count}</span>
+            <button className="btn btn-success" onClick={sumar}>+</button>
         </div>
     )
 }
