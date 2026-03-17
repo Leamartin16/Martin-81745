@@ -3,7 +3,7 @@
 
 EXOA - Tienda de Lentes Ray Ban 🕶️
 
-![app](/public/captura.png)
+![app](/public/Captura.png)
 
 EXOA es un e-commerce desarrollado como proyecto final para el curso de React JS en Coderhouse. Simula una tienda online de lentes Ray Ban, permitiendo explorar productos, filtrar por categorías, agregar al carrito y finalizar la compra. Los datos se gestionan con Firebase Firestore y las imágenes se almacenan en Firebase Storage.
 
@@ -19,7 +19,7 @@ EXOA es un e-commerce desarrollado como proyecto final para el curso de React JS
 
 
 ### Version Host 💻
-Si desea ver el proyecto online, puede ingresar al siguiente link: [Coder App ](https://coder-flex-81745.vercel.app/)
+Si desea ver el proyecto online, puede ingresar al siguiente link: [Coder App ](https://martin-81745.vercel.app/)
 
 
 ### Librerias utilizadas 📖
