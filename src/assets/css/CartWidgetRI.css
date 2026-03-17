@@ -1,0 +1,54 @@
+/* CartWidgetRI.css */
+.cart-widget-link {
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+
+.cart-widget-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 50%;
+    background: rgba(196, 169, 98, 0.15);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.cart-widget-container:hover {
+    background: rgba(196, 169, 98, 0.3);
+    transform: scale(1.05);
+}
+
+.cart-icon {
+    font-size: 1.5rem;
+    color: #C4A962;
+    transition: all 0.3s ease;
+}
+
+.cart-widget-container:hover .cart-icon {
+    color: #E5D68A;
+}
+
+/* Badge personalizado (sin Bootstrap) */
+.cart-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: #C4A962;
+    color: #000000;
+    font-weight: 700;
+    font-size: 0.7rem;
+    min-width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2px;
+    border: 2px solid #000000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1;
+}

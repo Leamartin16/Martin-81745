@@ -1,20 +1,20 @@
 import "../assets/css/NavBar.css"
-import logoSrc from "../assets/react.svg"
-import CartWidget from "./CartWidget";
+import CartWidget from "./CatWidget"
+import { NavLink } from "react-router-dom"
 
 const NavBar = () => {
-    console.log('NavBar');
+
     return (
-        <nav className= 'nav-container'>
-            <a className= 'anchor-nav' href="">
-                <img src={logoSrc} alt="Logo" width="40" height="40" />
-            </a>
-            <a className= 'anchor-nav' href="">Nuevos</a>
-            <a className= 'anchor-nav' href="">Ofertas</a>
-            <a className= 'anchor-nav' href="">Mas Vendidos</a>
-            <CartWidget/>
+        <nav className='nav-container'>
+            <NavLink className="anchor-nav" to="/">
+                <img src='../vite.svg' alt='logo' />
+            </NavLink>
+            <NavLink className="anchor-nav" to="/category/nuevos">Nuevos</NavLink>
+            <NavLink className="anchor-nav" to="/category/ofertas">Ofertas</NavLink>
+            <NavLink className="anchor-nav" to="/category/mas vendidos">Mas Vendidos</NavLink>
+            <CartWidget />
         </nav>
-    );
-};
+    )
+}
 
 export default NavBar

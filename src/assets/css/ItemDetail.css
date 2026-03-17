@@ -1,0 +1,257 @@
+/* src/assets/css/ItemDetail.css */
+/* Estilos para ItemDetail.jsx */
+
+/* Contenedor principal del detalle */
+.item-detail-container {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* Título del producto */
+.item-detail-container h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.item-detail-container h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, #C4A962, #000);
+    border-radius: 2px;
+}
+
+/* Imagen del producto */
+.item-detail-container img {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.item-detail-container img:hover {
+    transform: scale(1.02);
+}
+
+/* Descripción */
+.item-detail-container p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.8;
+    text-align: center;
+    max-width: 600px;
+    margin: 1rem auto;
+}
+
+/* Precio */
+.item-detail-container p:has(>) {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin: 1.5rem auto;
+}
+
+.item-detail-container p:has(>)::before {
+    content: '$';
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-right: 5px;
+    color: #C4A962;
+    vertical-align: super;
+}
+
+/* Badge de información (Edición limitada, etc) */
+.item-detail-container .badge {
+    display: inline-block !important;
+    background: linear-gradient(135deg, #C4A962, #E5D68A) !important;
+    color: #000 !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    padding: 0.6rem 1.5rem !important;
+    border-radius: 50px !important;
+    margin: 1rem auto !important;
+    text-align: center !important;
+    box-shadow: 0 4px 15px rgba(196, 169, 98, 0.3) !important;
+    border: none !important;
+    width: fit-content !important;
+    display: block !important;
+}
+
+/* Stock */
+.item-detail-container p:last-of-type {
+    font-size: 1.1rem;
+    color: #28a745;
+    font-weight: 600;
+    margin: 1.5rem auto;
+    padding: 0.5rem 1.5rem;
+    background: #f8f8f8;
+    border-radius: 50px;
+    display: block;
+    width: fit-content;
+    text-align: center;
+}
+
+/* Contenedor del ItemCount y botón  acsadw1qe12*/
+.item-detail-container>div:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+}
+
+/* Botón "Ir al carrito" (cuando purchase es true) */
+.item-detail-container .btn-dark {
+    background: linear-gradient(135deg, #000, #1a1a1a) !important;
+    color: white !important;
+    border: none !important;
+    padding: 0.8rem 2rem !important;
+    border-radius: 50px !important;
+    font-weight: 600 !important;
+    font-size: 1rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1.5px !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease !important;
+    border: 2px solid transparent !important;
+    min-width: 200px !important;
+    text-align: center !important;
+}
+
+.item-detail-container .btn-dark:hover {
+    background: #C4A962 !important;
+    color: #000 !important;
+    border-color: #C4A962 !important;
+    transform: translateY(-3px) !important;
+    box-shadow: 0 10px 25px rgba(196, 169, 98, 0.25) !important;
+}
+
+/* Estilos para ItemCount (asumiendo que tiene botones) */
+.item-count-container {
+    display: block;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.item-count-container > div {
+    display: inline-block;
+    width: auto;  /* Evita que tome el ancho completo */
+}
+
+.item-count-container button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #C4A962;
+    background: transparent;
+    color: #C4A962;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.item-count-container button:hover {
+    background: #C4A962;
+    color: #000;
+}
+
+.item-count-container span {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    min-width: 50px;
+    text-align: center;
+}
+
+.item-count-container button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .item-detail-container {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+
+    .item-detail-container h2 {
+        font-size: 2rem;
+    }
+
+    .item-detail-container p:has(>) {
+        font-size: 2rem;
+    }
+
+    .item-detail-container img {
+        max-width: 300px;
+    }
+}
+
+
+.btn-add-to-cart {
+  background: #1a1a1a !important;
+  color: white !important;
+  border: none !important;
+  padding: 0.8rem !important;
+  margin-top: 0.5rem;
+  border-radius: 50px !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
+  text-decoration: none !important;
+  text-align: center !important;
+  display: inline-block !important;
+  width: 100% !important;
+  text-transform: uppercase !important;
+  letter-spacing: 2px !important;
+  font-size: 0.85rem !important;
+  position: relative !important;
+  overflow: hidden !important;
+  z-index: 1 !important;
+}
+
+
+.btn-add-to-cart:hover {
+  background: #C4A962 !important;
+  color: #1a1a1a !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 5px 15px rgba(196, 169, 98, 0.4) !important;
+}
+
+.btn-add-to-cart:hover::before {
+    left: 0;
+}
+
+.btn-add-to-cart span {
+    position: relative;
+    z-index: 1;
+}
+
+.btn-add-to-cart:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.btn-add-to-cart:disabled::before {
+    display: none;
+}

@@ -1,0 +1,135 @@
+/* NavBarBS.css */
+.custom-navbar {
+    background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%) !important;
+    padding: 0.5rem 0 !important;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3) !important;
+}
+
+.navbar-logo {
+    max-width: 120px;
+    height: auto;
+    transition: transform 0.3s ease;
+    filter: none !important; /* Quita cualquier filtro que pueda estar afectando */
+}
+
+.navbar-logo:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos para los links principales */
+.nav-link-custom {
+    color: #ffffff !important;
+    opacity: 0.9;
+    font-weight: 500 !important;
+    margin: 0 0.3rem !important;
+    padding: 0.5rem 1rem !important;
+    border-radius: 6px !important;
+    transition: all 0.3s ease !important;
+    font-size: 0.95rem !important;
+    letter-spacing: 0.5px !important;
+    text-transform: uppercase !important;
+    position: relative !important;
+}
+
+.nav-link-custom:hover {
+    opacity: 1;
+    color: #C4A962 !important;
+    background: rgba(255, 255, 255, 0.05) !important;
+}
+
+.me-auto {
+    margin-right: auto !important;
+}
+
+/* Asegura que el carrito esté bien posicionado */
+.cart-widget-link {
+    margin-left: 1rem;
+}
+
+.nav-link-custom.active {
+    color: #C4A962 !important;
+    background: rgba(196, 169, 98, 0.1) !important;
+}
+
+.nav-link-custom.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    width: 60%;
+    height: 2px;
+    background: #C4A962;
+    border-radius: 2px;
+}
+
+/* Estilos para el dropdown */
+.nav-dropdown-custom .dropdown-toggle {
+    color: rgba(255, 255, 255, 0.8) !important;
+    font-weight: 500 !important;
+    padding: 0.5rem 1rem !important;
+    text-transform: uppercase !important;
+    font-size: 0.95rem !important;
+    letter-spacing: 0.5px !important;
+    background: transparent !important;
+    border: none !important;
+}
+
+.nav-dropdown-custom .dropdown-toggle:hover {
+    color: #C4A962 !important;
+    background: rgba(255, 255, 255, 0.05) !important;
+}
+
+.nav-dropdown-custom .dropdown-toggle.show {
+    color: #C4A962 !important;
+}
+
+/* Menú desplegable */
+.nav-dropdown-custom .dropdown-menu {
+    background: #1a1a1a !important;
+    border: 1px solid rgba(196, 169, 98, 0.2) !important;
+    border-radius: 8px !important;
+    padding: 0.5rem !important;
+    margin-top: 0.5rem !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3) !important;
+}
+
+.dropdown-item-custom {
+    color: rgba(255, 255, 255, 0.8) !important;
+    padding: 0.6rem 1.2rem !important;
+    border-radius: 4px !important;
+    transition: all 0.3s ease !important;
+    font-size: 0.9rem !important;
+}
+
+.dropdown-item-custom:hover {
+    background: rgba(196, 169, 98, 0.15) !important;
+    color: #C4A962 !important;
+}
+
+.dropdown-item-custom.active {
+    background: #C4A962 !important;
+    color: black !important;
+    font-weight: 600 !important;
+}
+
+.dropdown-divider {
+    border-top-color: rgba(196, 169, 98, 0.2) !important;
+    margin: 0.4rem 0 !important;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .custom-navbar {
+        background: black !important;
+    }
+
+    .nav-link-custom {
+        text-align: center !important;
+        margin: 0.2rem 0 !important;
+    }
+
+    .nav-dropdown-custom .dropdown-menu {
+        background: #222 !important;
+        border: none !important;
+    }
+}

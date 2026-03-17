@@ -1,0 +1,182 @@
+/* Checkout.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+.checkout-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.checkout-container h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    position: relative;
+    padding-bottom: 0.8rem;
+}
+
+.checkout-container h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, #C4A962, #000);
+    border-radius: 2px;
+}
+
+.checkout-container h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #666;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* Formulario */
+.checkout-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-top: 1.5rem;
+}
+
+.checkout-container .form-control {
+    width: 100%;
+    padding: 0.9rem 1.2rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.3s ease;
+    background: #f8f8f8;
+}
+
+.checkout-container .form-control:focus {
+    outline: none;
+    border-color: #C4A962;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(196, 169, 98, 0.1);
+}
+
+.checkout-container .form-control::placeholder {
+    color: #999;
+    font-weight: 300;
+}
+
+/* Mensaje de error */
+.checkout-container .error-message {
+    display: block;
+    background: #ffebee;
+    color: #c62828;
+    padding: 0.8rem 1.2rem;
+    border-radius: 50px;
+    font-weight: 500;
+    text-align: center;
+    border-left: 4px solid #c62828;
+    margin-bottom: 1rem;
+}
+
+/* Botón de submit */
+.checkout-container .btn-submit {
+    background: linear-gradient(135deg, #000, #1a1a1a);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+.checkout-container .btn-submit:hover:not(:disabled) {
+    background: #C4A962;;
+    color: #000;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(196, 169, 98, 0.3);
+}
+
+.checkout-container .btn-submit:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Vista de orden generada */
+.checkout-container.order-confirmation {
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.checkout-container.order-confirmation h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.checkout-container.order-confirmation h3 {
+    font-size: 1.3rem;
+    color: #C4A962;
+    font-weight: 600;
+    background: #f8f8f8;
+    padding: 1rem;
+    border-radius: 50px;
+    margin: 1.5rem 0;
+    word-break: break-all;
+}
+
+.checkout-container .btn-home {
+    background: linear-gradient(135deg, #000, #1a1a1a);
+    color: rgb(238, 236, 236);
+    border: none;
+    padding: 0.8rem 2.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.checkout-container .btn-home:hover {
+    background: transparent;
+    color: #000;
+    border-color: #C4A962;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(196, 169, 98, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .checkout-container {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+    
+    .checkout-container h1 {
+        font-size: 1.6rem;
+    }
+    
+    .checkout-container .form-control {
+        padding: 0.8rem 1rem;
+    }
+    
+    .checkout-container.order-confirmation h1 {
+        font-size: 1.8rem;
+    }
+}
