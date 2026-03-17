@@ -1,4 +1,4 @@
-/* CartWidgetRI.css */
+
 .cart-widget-link {
     text-decoration: none;
     position: relative;
@@ -31,7 +31,6 @@
     color: #E5D68A;
 }
 
-/* Badge personalizado (sin Bootstrap) */
 .cart-badge {
     position: absolute;
     top: -5px;

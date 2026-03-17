@@ -7,7 +7,7 @@ import { NavLink } from 'react-router-dom';
 import '../assets/css/NavBarBS.css';
 
 function NavBarBS() {
-    console.log('Navbar')
+    
     return (
         <Navbar expand="lg" className="custom-navbar" variant="dark">
             <Container>

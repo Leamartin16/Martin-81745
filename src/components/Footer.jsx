@@ -11,7 +11,7 @@ const Footer = () => {
     return (
         <footer className="footer">
             <Container>
-                <Row className="footer-content">
+                <Row className="footer-content justify-content-between align-items-start">
                     <Col lg={4} md={6} className="footer-section">
                         <h3>Exsoa</h3>
                         <p className="footer-description">
@@ -29,16 +29,6 @@ const Footer = () => {
                     </Col>
 
                     <Col lg={3} md={6} className="footer-section">
-                        <h4>Información</h4>
-                        <ul className="footer-links">
-                            <li><Link to="/about">Sobre Nosotros</Link></li>
-                            <li><Link to="/contact">Contacto</Link></li>
-                            <li><Link to="/terms">Términos y Condiciones</Link></li>
-                            <li><Link to="/privacy">Política de Privacidad</Link></li>
-                        </ul>
-                    </Col>
-
-                    <Col lg={3} md={6} className="footer-section">
                         <h4>Contacto</h4>
                         <ul className="footer-contact">
                             <li>📍 Av. Principal 123, Buenos Aires</li>
@@ -52,8 +42,6 @@ const Footer = () => {
                 <Row className="footer-bottom">
                     <Col className="text-center">
                         <p>© {currentYear} Exsoa - Todos los derechos reservados</p>
-                        {/* <p className="footer-credit">
-                        </p> */}
                     </Col>
                 </Row>
             </Container>

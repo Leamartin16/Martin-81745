@@ -1,4 +1,4 @@
-/* ItemListContainer.css */
+
 .products-container {
   max-width: 1400px;
   margin: 0 auto;
@@ -13,7 +13,7 @@
   margin-bottom: 3rem;
   position: relative;
   padding-bottom: 1.5rem;
-  width: 100%; /* Asegurar que ocupe todo el ancho */
+  width: 100%;
 }
 
 .section-title::after {
@@ -27,18 +27,18 @@
   background: linear-gradient(90deg, #C4A962, #000);
 }
 
-/* ESTO ES LO CRÍTICO - EL GRID */
+
 .products-grid {
-  display: grid !important; /* Forzar grid */
+  display: grid !important;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)) !important;
   gap: 2rem !important;
   width: 100% !important;
 }
 
-/* Asegurar que cada Item ocupe su celda */
+
 .products-grid > * {
   width: 100% !important;
-  min-width: 0 !important; /* Prevenir desbordamiento */
+  min-width: 0 !important; 
 }
 
 /* Responsive */
@@ -51,6 +51,6 @@
 
 @media (max-width: 480px) {
   .products-grid {
-    grid-template-columns: 1fr !important; /* Una columna en móviles */
+    grid-template-columns: 1fr !important;
   }
 }

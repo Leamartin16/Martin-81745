@@ -1,4 +1,4 @@
-/* NavBarBS.css */
+
 .custom-navbar {
     background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%) !important;
     padding: 0.5rem 0 !important;
@@ -9,14 +9,13 @@
     max-width: 120px;
     height: auto;
     transition: transform 0.3s ease;
-    filter: none !important; /* Quita cualquier filtro que pueda estar afectando */
+    filter: none !important; 
 }
 
 .navbar-logo:hover {
     transform: scale(1.05);
 }
 
-/* Estilos para los links principales */
 .nav-link-custom {
     color: #ffffff !important;
     opacity: 0.9;
@@ -41,7 +40,6 @@
     margin-right: auto !important;
 }
 
-/* Asegura que el carrito esté bien posicionado */
 .cart-widget-link {
     margin-left: 1rem;
 }

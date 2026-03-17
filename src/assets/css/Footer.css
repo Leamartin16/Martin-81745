@@ -8,16 +8,6 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-.footer::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: linear-gradient(90deg, #C4A962, transparent);
-}
-
 .footer-content {
   margin-bottom: 3rem;
 }
@@ -135,7 +125,7 @@
 }
 
 .footer-bottom p {
-  color: rgba(255,255,255,0.6);
+  color: rgba(255, 255, 255, 0.6);
   font-size: 0.9rem;
   margin: 0.2rem 0;
 }

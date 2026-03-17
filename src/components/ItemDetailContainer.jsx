@@ -13,17 +13,13 @@ const ItemDetailContainer = () => {
     const [detail, setDetail] = useState({})
     const [loading, setLoading] = useState(true)
     const [invalid, setInvalid] = useState(null)
-    // const param =useParams()
-    console.log('ItemDetailContainer')
     const { id } = useParams()
     
 
 
-    //Firebase
     useEffect(() => {
-        // (1) ref al prod
+
         const prodRef = doc(db, "productos", id)
-        // (2) traer data
         getDoc(prodRef)
         .then((res) => {
         if (res.data()) {

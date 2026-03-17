@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 import '../assets/css/Item.css'
 
 const Item = ({ prod }) => {
-    // Si no hay producto, no renderizar
     if (!prod) return null;
 
     return (

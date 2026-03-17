@@ -108,9 +108,6 @@ export const getOneProduct = (id)=> {
             if(error){
                 reject('Hubo un error, intente mas tarde')
             }else{
-                //harcodeado
-                // resolve(productos[1])
-                //dinamico
                 let prod= productos.find((prd)=> prd.id === id)
                 resolve(prod)
             }

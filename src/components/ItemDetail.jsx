@@ -1,5 +1,4 @@
 
-//4. CUANDO QUIERO USAR UN CONTEXTO IMPORTO EL HOOK PARA USAR EL CONTEXT Y EL CONTEXTO QUE QUIERO USAR
 import { useContext, useState, useEffect } from 'react'
 import { CartContext } from '../context/CartContext'
 import ItemCount from './ItemCount'
@@ -11,9 +10,9 @@ const ItemDetail = ({ detail }) => {
     const { cart, addItem, itemQty, } = useContext(CartContext)
     const [randomDetail, setRandomDetail] = useState('')
 
-    console.log(cart)
+    
     const onAdd = (cantidad) => {
-        // alert(`Agregaste al carrito ${cantidad} unidades del producto ${detail.name}`)
+
         addItem(detail, cantidad)
         setPurchase(true)
 
@@ -34,7 +33,7 @@ const ItemDetail = ({ detail }) => {
     const stockActualizado = detail.stock - itemQty(detail.id)
 
         return (
-        <div className="item-detail-container"> {/* Contenedor principal */}
+        <div className="item-detail-container"> 
             <h2>Detalle de {detail.name}</h2>
             
             <img src={detail.img} alt={detail.name} />
@@ -43,7 +42,7 @@ const ItemDetail = ({ detail }) => {
             
             <p>${detail.price},00</p>
             
-            <span className="badge bg-info text-dark fs-6 p-2"> {/* Mantenemos clases de Bootstrap pero con estilos personalizados */}
+            <span className="badge bg-info text-dark fs-6 p-2"> 
                 {randomDetail}
             </span>
             

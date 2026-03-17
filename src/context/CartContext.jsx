@@ -1,29 +1,24 @@
-import {createContext, useState} from 'react'
+import {createContext, useEffect, useState} from 'react'
 
-// 1. creamos el contexto (cajita vacia)
 export const CartContext = createContext()
 
+const carritoLS = JSON.parse(localStorage.getItem('carrito')) || []
 
-
-//2. crear al proveedor
 
 export const CartProvider = ({ children }) => {
-    //herramietas (funciones y datos)
-    const [cart, setCart] = useState([])
+    const [cart, setCart] = useState(carritoLS)
+    
+    useEffect(() => {
+        localStorage.setItem('carrito', JSON.stringify(cart))
+    }, [cart])
 
-    //agregar un item al carrito tiene que contemplar repetidos (ITEM DETAIL)
     const addItem = (item, qty) => {
-        // console.log(item, qty)
-        // console.log({...item, quantity:qty})
         if (isInCart(item.id)) {
-            //ya existe, modificar la cantidad 
             setCart(
                 cart.map((prod) => {
                     if (item.id === prod.id) {
-                        //sumo cantidades
                         return { ...prod, quantity: prod.quantity + qty }
                     } else {
-                        //no modifico
                         return prod
                     }
                 })
