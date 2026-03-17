@@ -16,14 +16,14 @@ const ItemListContainer = (props) => {
 
     useEffect(() => {
         setLoading(true)
-        // ref coollect (1)
+
         const prodColl = type
             ? query(collection(db, "productos"), where("category", "==", type))
             : collection(db, "productos")
-        // traer la info (2)
+
         getDocs(prodColl)
             .then((res) => {
-                // limpiar data (3)
+
                 const list = res.docs.map((doc) => {
                     return {
                         id: doc.id,
@@ -36,11 +36,6 @@ const ItemListContainer = (props) => {
             .finally(() => setLoading(false))
     }, [type])
 
-    // const subirProd = ()=> {
-    //     console.log('SUBIENDO')
-    //     const collASubir = collection(db, "productos")
-    //     productos.map((prod)=> addDoc(collASubir, prod))
-    // }
 
 
 

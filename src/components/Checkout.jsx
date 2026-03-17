@@ -27,9 +27,7 @@ const Checkout = () => {
 
 
     const finalizarCompra = (e) => {
-        //para que no recargue todo
         e.preventDefault()
-        //validar
         if (!buyer.name || !buyer.lastname || !buyer.address || !buyer.email || !validMail) {
             setError('Por favor complete todos campos')
         } else if (buyer.email !== validMail) {
@@ -43,13 +41,10 @@ const Checkout = () => {
                 total: total(),
                 fecha: serverTimestamp()
             }
-            //creamos ref
             const orderColl = collection(db, "orders")
-            //agregar el doc
             addDoc(orderColl, order)
                 .then((res) => {
                     setOrderId(res.id)
-                    //borro el carrito
                     clear()
                 })
                 .catch((error) => console.log(error))

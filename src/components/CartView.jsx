@@ -10,7 +10,7 @@ const CartView = () => {
             <h1 className="cart-title">Tu carrito 🛒</h1>
             <div className="cart-items">
                 {
-                    // cart.map((compra)=> <CartItem compra={compra} key={compra.id}/>)
+                
                     cart.map((compra) => (
                         <div key={compra.id} className="cart-item">
                             <img src={compra.img} alt={compra.name} className="cart-item-image" />

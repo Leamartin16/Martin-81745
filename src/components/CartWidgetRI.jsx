@@ -7,7 +7,6 @@ import '../assets/css/CartWidgetRI.css';
 
 const CartWidgetRI = ()=> {
     const {cart, totalQty}= useContext(CartContext)
-    console.log(cart)
     
     return(
         <Link to="/cart" className="cart-widget-link">

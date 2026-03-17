@@ -1,4 +1,4 @@
-/* NavBarBS.css */
+
 .custom-navbar {
     background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%) !important;
     padding: 0.5rem 0 !important;
@@ -9,14 +9,14 @@
     max-width: 120px;
     height: auto;
     transition: transform 0.3s ease;
-    filter: none !important; /* Quita cualquier filtro que pueda estar afectando */
+    filter: none !important; 
 }
 
 .navbar-logo:hover {
     transform: scale(1.05);
 }
 
-/* Estilos para los links principales */
+
 .nav-link-custom {
     color: #ffffff !important;
     opacity: 0.9;
@@ -41,7 +41,7 @@
     margin-right: auto !important;
 }
 
-/* Asegura que el carrito esté bien posicionado */
+
 .cart-widget-link {
     margin-left: 1rem;
 }
@@ -62,7 +62,7 @@
     border-radius: 2px;
 }
 
-/* Estilos para el dropdown */
+
 .nav-dropdown-custom .dropdown-toggle {
     color: rgba(255, 255, 255, 0.8) !important;
     font-weight: 500 !important;
@@ -83,7 +83,7 @@
     color: #C4A962 !important;
 }
 
-/* Menú desplegable */
+
 .nav-dropdown-custom .dropdown-menu {
     background: #1a1a1a !important;
     border: 1px solid rgba(196, 169, 98, 0.2) !important;

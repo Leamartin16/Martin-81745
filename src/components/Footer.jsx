@@ -52,8 +52,6 @@ const Footer = () => {
                 <Row className="footer-bottom">
                     <Col className="text-center">
                         <p>© {currentYear} Exsoa - Todos los derechos reservados</p>
-                        {/* <p className="footer-credit">
-                        </p> */}
                     </Col>
                 </Row>
             </Container>
