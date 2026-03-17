@@ -30,4 +30,7 @@ Si desea ver el proyecto online, puede ingresar al siguiente link: [Coder App ](
 - [Firebase](https://firebase.google.com/): configurada para base de datos.
 
 
-Desarrollado por Leandro ✨
+👨‍💻 Autor
+
+Leandro 
+Proyecto final para Coderhouse – Comisión 81745
