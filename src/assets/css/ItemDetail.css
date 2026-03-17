@@ -1,5 +1,3 @@
-
-/* Contenedor principal */
 .item-detail-container {
     max-width: 1200px;
     margin: 3rem auto;
@@ -75,7 +73,6 @@
     vertical-align: super;
 }
 
-/* Badge de información */
 .item-detail-container .badge {
     display: inline-block !important;
     background: linear-gradient(135deg, #C4A962, #E5D68A) !important;
@@ -106,7 +103,6 @@
     text-align: center;
 }
 
-/* Contenedor del ItemCount y botón*/
 .item-detail-container>div:last-child {
     display: flex;
     justify-content: center;
@@ -114,7 +110,6 @@
     margin: 2rem auto;
 }
 
-/* Botón "Ir al carrito"*/
 .item-detail-container .btn-dark {
     background: linear-gradient(135deg, #000, #1a1a1a) !important;
     color: white !important;
@@ -140,7 +135,6 @@
     box-shadow: 0 10px 25px rgba(196, 169, 98, 0.25) !important;
 }
 
-/* Estilos para ItemCount */
 .item-count-container {
     display: block;
     text-align: center;
@@ -149,7 +143,7 @@
 
 .item-count-container > div {
     display: inline-block;
-    width: auto;
+    width: auto; 
 }
 
 .item-count-container button {

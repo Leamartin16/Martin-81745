@@ -18,7 +18,6 @@ const ItemDetailContainer = () => {
 
 
     useEffect(() => {
-
         const prodRef = doc(db, "productos", id)
         getDoc(prodRef)
         .then((res) => {

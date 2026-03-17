@@ -60,7 +60,7 @@
     border-radius: 2px;
 }
 
-/* Estilos para el dropdown */
+
 .nav-dropdown-custom .dropdown-toggle {
     color: rgba(255, 255, 255, 0.8) !important;
     font-weight: 500 !important;
@@ -81,7 +81,7 @@
     color: #C4A962 !important;
 }
 
-/* Menú desplegable */
+
 .nav-dropdown-custom .dropdown-menu {
     background: #1a1a1a !important;
     border: 1px solid rgba(196, 169, 98, 0.2) !important;

@@ -6,7 +6,6 @@ import NavBarBS from './components/NavBarBs';
 import ItemDetailContainer from './components/ItemDetailContainer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Error from './components/Error';
-//3. importamos al proveedor para dar acceso al contexto
 import { CartProvider } from './context/CartContext';
 import CartContainer from './components/CartContainer';
 import Checkout from './components/Checkout';

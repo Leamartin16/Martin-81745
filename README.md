@@ -32,5 +32,5 @@ Si desea ver el proyecto online, puede ingresar al siguiente link: [Coder App ](
 
 👨‍💻 Autor
 
-Leandro – GitHub – LinkedIn
+Leandro 
 Proyecto final para Coderhouse – Comisión 81745

@@ -28,7 +28,6 @@ const Checkout = () => {
 
     const finalizarCompra = (e) => {
         e.preventDefault()
-
         if (!buyer.name || !buyer.lastname || !buyer.address || !buyer.email || !validMail) {
             setError('Por favor complete todos campos')
         } else if (buyer.email !== validMail) {
@@ -42,13 +41,10 @@ const Checkout = () => {
                 total: total(),
                 fecha: serverTimestamp()
             }
-
             const orderColl = collection(db, "orders")
-
             addDoc(orderColl, order)
                 .then((res) => {
                     setOrderId(res.id)
-
                     clear()
                 })
                 .catch((error) => console.log(error))

@@ -10,9 +10,8 @@ const ItemDetail = ({ detail }) => {
     const { cart, addItem, itemQty, } = useContext(CartContext)
     const [randomDetail, setRandomDetail] = useState('')
 
-    
-    const onAdd = (cantidad) => {
 
+    const onAdd = (cantidad) => {
         addItem(detail, cantidad)
         setPurchase(true)
 
